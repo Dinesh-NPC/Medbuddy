@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create Account</h2>
+        <form action="/signup" method="POST">
+            <label>Role</label>
+            <select name="role">
+                <option value="patient">Patient</option>
+            </select>
+            <label>Username</label>
+            <input type="text" name="username" required>
+            <label>Password</label>
+            <input type="password" name="password" required>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+</body>
+</html>

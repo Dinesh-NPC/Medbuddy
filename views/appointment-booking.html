@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Select Hospital & Booking Type</h2>
+        <form action="/book" method="POST">
+            <label>Hospital</label>
+            <div class="hospital-options">
+                <div><input type="radio" name="hospital" value="Apollo" required> Apollo Hospital</div>
+                <div><input type="radio" name="hospital" value="Fortis" required> Fortis Hospital</div>
+                <div><input type="radio" name="hospital" value="AIIMS" required> AIIMS Hospital</div>
+            </div>
+            <label>Booking Type</label>
+            <select name="type">
+                <option value="Special">Special</option>
+                <option value="Emergency">Emergency</option>
+                <option value="Normal">Normal</option>
+            </select>
+            <label>Doctor Info</label>
+            <input type="text" name="doctor" placeholder="e.g. Dr. Sharma (10am - 4pm)" required>
+            <label>Date</label>
+            <input type="date" name="date" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+</body>
+</html>

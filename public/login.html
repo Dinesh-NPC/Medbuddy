@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label>Role</label>
+            <select name="role">
+                <option value="patient">Patient</option>
+            </select>
+            <label>Username</label>
+            <input type="text" name="username" required>
+            <label>Password</label>
+            <input type="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p style="text-align:center;">No account? <a href="/signup">Create one</a></p>
+    </div>
+</body>
+</html>
